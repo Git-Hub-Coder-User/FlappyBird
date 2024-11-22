@@ -30,6 +30,7 @@
 #"Is there python grammarly" - Ethan
 #"Then the bird dies" - LaRose "Finally" - Suri
 #"Let's make this exist" - LaRose
+#"Where's my get_rect? " - LaRose
 
 #The commented our code are an alternative way to run the ground which makes it so there's two that cycle
 import pygame
@@ -57,6 +58,7 @@ class Game:
         self.pipe = pygame.transform.scale(self.pipe, (80, 438))
         self.background = pygame.transform.scale(self.background, (400, 720))
         self.ground = pygame.transform.scale(self.ground, (470, 160))
+        self.bird_rect = self.bird.get_rect(center = (70, 180)) 
         self.high_score = 0
     
     def show_background(self, screen):
@@ -76,6 +78,8 @@ class Game:
     
     def show_bird(self, screen):
         screen.blit(self.rotated_bird, self.bird_rect)
+        # print(f"This is the rectangle: {self.bird_rect}")
+        # print(f"This is the bird: {self.rotated_bird}")
     
     def update_bird(self):
         self.bird_movement += self.gravity

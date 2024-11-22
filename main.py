@@ -13,6 +13,11 @@
 #"Oh my gosh. Tab this over, sir, and this one " *very passive agressive* - LaRose
 #"We need to make it so our poor bird cannot go through the pipes" - LaRose
 #"So, collision time. " - LaRose
+#"Is this particular situation, I'm not sure" - LaRose
+
+#Print statement debugging: Using print statements to log stuff
+#Logic debugging: Reading through code and using brain
+#Logging: 
 
 import pygame
 import sys
